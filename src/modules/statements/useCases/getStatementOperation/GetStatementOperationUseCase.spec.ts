@@ -69,7 +69,7 @@ describe('GetStatementOperationUseCase', () => {
     };
 
     const result = await getStatementOperationUseCase.execute(mockRequest);
-    console.log(result);
+    
     expect(result.id).toEqual(mockStatement.id);
     expect(result.user_id).toEqual(mockUser.id);
   })
